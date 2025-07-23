@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开始学习 - 子乐学习</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0a0a0a;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            color: #4444ff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .learning-path {
+            margin-bottom: 30px;
+        }
+        .learning-path h2 {
+            color: #4444ff;
+            margin-bottom: 15px;
+        }
+        .path-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: rgba(68, 68, 255, 0.1);
+            border-radius: 5px;
+            border-left: 3px solid #4444ff;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .path-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 0 15px rgba(68, 68, 255, 0.3);
+        }
+        .path-item h3 {
+            margin-bottom: 10px;
+            color: #4444ff;
+        }
+        .path-item p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        .resource-link {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: rgba(68, 68, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            border: 1px solid rgba(68, 68, 255, 0.3);
+        }
+        .resource-link:hover {
+            background-color: rgba(68, 68, 255, 0.4);
+            transform: scale(1.05);
+        }
+        .faq-question {
+            font-weight: bold;
+            margin-bottom: 5px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-answer {
+            display: none;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        .faq-question.active + .faq-answer {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .resource-link:hover {
+            background-color: rgba(68, 68, 255, 0.3);
+            transform: scale(1.03);
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .back-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+        .faq {
+            margin-top: 30px;
+        }
+        .faq h2 {
+            color: #4444ff;
+            margin-bottom: 15px;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .faq-question {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #4444ff;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">返回首页</a>
+
+    <div class="container">
+        <h1>开始学习</h1>
+
+        <div class="learning-path">
+            <h2>DNA学习路径</h2>
+
+            <div class="path-item">
+                <h3><i class="fas fa-book-open"></i> 1. DNA基础知识</h3>
+                <p>了解DNA的基本结构、功能和在生物体内的作用。学习核苷酸、碱基对、双螺旋结构等基本概念。</p>
+                <a href="https://zh.wikipedia.org/wiki/DNA" class="resource-link" target="_blank"><i class="fas fa-external-link-alt"></i> DNA维基百科</a>
+                <a href="https://www.ncbi.nlm.nih.gov/books/NBK26821/" class="resource-link" target="_blank"><i class="fas fa-external-link-alt"></i> 分子生物学基础</a>
+            </div>
+
+            <div class="path-item">
+                <h3><i class="fas fa-sync-alt"></i> 2. DNA复制与转录</h3>
+                <p>深入学习DNA复制过程、酶的作用以及遗传信息如何从DNA转录到RNA的机制。</p>
+                <a href="https://www.ncbi.nlm.nih.gov/books/NBK26850/" class="resource-link" target="_blank"><i class="fas fa-external-link-alt"></i> DNA复制机制</a>
+                <a href="https://www.ncbi.nlm.nih.gov/books/NBK26887/" class="resource-link" target="_blank"><i class="fas fa-external-link-alt"></i> RNA转录与加工</a>
+            </div>
+
+            <div class="path-item">
+                <h3><i class="fas fa-dna"></i> 3. 基因与基因组</h3>
+                <p>了解基因的结构、功能以及基因组学的基本概念。学习如何分析和解读基因组数据。</p>
+                <a href="https://www.ncbi.nlm.nih.gov/books/NBK21114/" class="resource-link" target="_blank"><i class="fas fa-external-link-alt"></i> 基因组学简介</a>
+                <a href="https://www.genome.gov/" class="resource-link" target="_blank"><i class="fas fa-external-link-alt"></i> 美国国家人类基因组研究所</a>
+            </div>
+
+            <div class="path-item">
+                <h3><i class="fas fa-laptop-code"></i> 4. 生物信息学入门</h3>
+                <p>学习使用计算工具分析DNA序列数据，包括序列比对、基因识别和变异检测等技术。</p>
+                <a href="https://www.coursera.org/learn/bioinformatics" class="resource-link" target="_blank"><i class="fas fa-external-link-alt"></i> 生物信息学专项课程</a>
+                <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi" class="resource-link" target="_blank"><i class="fas fa-external-link-alt"></i> BLAST序列比对工具</a>
+            </div>
+        </div>
+
+        <div class="faq">
+            <h2>常见问题</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">什么是DNA？ <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">DNA（脱氧核糖核酸）是一种长链聚合物，包含了生物发育和运作所需的遗传指令。它由四种核苷酸组成，形成双螺旋结构。</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">DNA和RNA有什么区别？ <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">DNA是双链结构，包含脱氧核糖和胸腺嘧啶；而RNA通常是单链，包含核糖和尿嘧啶。RNA在蛋白质合成中起重要作用。</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">如何开始学习生物信息学？ <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">建议先掌握基础生物学和遗传学知识，然后学习编程（如Python）和生物信息学工具（如BLAST、SAMtools等）。在线课程和实践项目也是很好的学习途径。</div>
+            </div>
+
+            <script>
+                // FAQ折叠面板功能
+                document.querySelectorAll('.faq-question').forEach(question => {
+                    question.addEventListener('click', () => {
+                        question.classList.toggle('active');
+                        const icon = question.querySelector('i.fas.fa-chevron-down');
+                        if (question.classList.contains('active')) {
+                            icon.style.transform = 'rotate(180deg)';
+                        } else {
+                            icon.style.transform = 'rotate(0)';
+                        }
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</body>
+</html>

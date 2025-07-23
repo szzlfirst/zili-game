@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目介绍 - 子乐学习</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0a0a0a;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            color: #44dd44;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .project {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .project:last-child {
+            border-bottom: none;
+        }
+        .project h2 {
+            color: #44dd44;
+            margin-bottom: 10px;
+        }
+        .project-description {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .tech-item {
+            background-color: rgba(68, 221, 68, 0.2);
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            border: 1px solid rgba(68, 221, 68, 0.3);
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .back-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">返回首页</a>
+
+    <div class="container">
+        <h1>项目介绍</h1>
+
+        <div class="project">
+            <h2>DNA可视化教学工具</h2>
+            <p class="project-description">这是一个交互式DNA双螺旋结构可视化工具，旨在帮助学生更好地理解DNA的分子结构。该工具允许用户旋转、放大和探索DNA模型，并提供有关核苷酸配对和DNA复制过程的详细信息。</p>
+            <div class="project-tech">
+                <span class="tech-item">HTML5</span>
+                <span class="tech-item">CSS3</span>
+                <span class="tech-item">JavaScript</span>
+                <span class="tech-item">WebGL</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <h2><i class="fas fa-chart-line"></i> 生物信息学数据分析平台</h2>
+            <p class="project-description">一个基于云的生物信息学数据分析平台，提供DNA序列比对、基因表达分析和变异检测等功能。该平台支持多种数据分析算法，并提供直观的可视化结果展示。</p>
+            <div class="project-tech">
+                <span class="tech-item">React</span>
+                <span class="tech-item">Node.js</span>
+                <span class="tech-item">Express</span>
+                <span class="tech-item">MongoDB</span>
+                <span class="tech-item">Python</span>
+                <span class="tech-item">Docker</span>
+            </div>
+            <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-code"></i> 查看源码</a>
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> 了解更多</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <h2>个性化健康管理系统</h2>
+            <p class="project-description">基于用户基因数据的个性化健康管理系统。该系统分析用户的DNA数据，提供定制化的健康建议、饮食计划和运动方案，帮助用户优化生活方式。</p>
+            <div class="project-tech">
+                <span class="tech-item">React Native</span>
+                <span class="tech-item">Firebase</span>
+                <span class="tech-item">Machine Learning</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
